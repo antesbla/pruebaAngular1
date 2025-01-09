@@ -1,3 +1,4 @@
+import { DbzService } from '../services/dbz.module';
 import { Character } from './../interfaces/character.interface';
 import { Component} from '@angular/core';
 
@@ -32,4 +33,7 @@ export class MainPageComponent {
     this.characters.splice(index,1);
   }
 
+  constructor( public dbzService:DbzService){
+
+  }
 }
